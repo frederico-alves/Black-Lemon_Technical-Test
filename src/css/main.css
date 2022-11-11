@@ -96,7 +96,7 @@ body {
     background-color: var(--color-3);
     color: var(--color-1);
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
@@ -118,6 +118,10 @@ body {
     flex-wrap: wrap;
     margin-top: 1rem;
     justify-content: space-between;
+
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--color-3) 1px solid;
 }
 
 .product-details__selling-points-item {
