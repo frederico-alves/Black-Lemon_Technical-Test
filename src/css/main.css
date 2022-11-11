@@ -1,0 +1,231 @@
+/*------------------------------------------------
+-- FREDERICO ALVES --
+--------------------------------------------------
+-- BLACK LEMON --
+--------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+:root {
+    --text-font: 'Lato', sans-serif;
+    --color-0: #FFFFFF;
+    --color-1: #4D4D4D;
+    --color-2: #F2F2F2;
+    --color-3: #BFABAB;
+    --color-4: #9F938B;
+    --color-5: #F6F6F5;
+    --color-6: #948282;
+}
+
+body {
+    font-family: var(--text-font);
+    font-weight: 400;
+    background-color: var(--color-0);
+    color: var(--color-1);
+    font-size: 1rem;
+}
+
+.product-details {
+    display: flex;
+    background-color: var(--color-2);
+}
+
+.product-details__image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-details_info {
+    padding: 2rem 2.5rem;
+    min-width: 30rem;
+}
+
+.product-details__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+}
+
+.product-details__sub-title {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.product-details__description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-top: var(--color-3) 1px solid;
+    border-bottom: var(--color-3) 1px solid;
+}
+
+.product-details__menu {
+    display: flex;
+    list-style: none;
+}
+
+.product-details__menu a {
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: 300;
+    font-size: 0.8rem;
+    /* padding: 0 0.1rem; */
+}
+
+.product-details__menu {
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.product-details__menu li:first-child img {
+    padding-right: 0.5rem;
+    display: inline;
+}
+
+.product-details__menu span {
+    padding: 0 0.5rem;
+}
+
+.product-details__button button {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--color-3);
+    color: var(--color-1);
+    text-align: center;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.product-details__button button:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+.product-details__button button:active {
+    transform: scale(0.95);
+}
+
+.product-details__selling-points {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.product-details__selling-points-item {
+    display: flex;
+    align-items: center;
+    width: 11rem;
+    margin: 1rem 0;
+}
+
+.product-details__selling-points-item-svg {
+    width: 2.8rem;
+}
+
+.product-details__selling-points-item-text {
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    color: var(--color-6);
+}
+
+.product-suggestions {
+    padding-bottom: 5rem;
+}
+
+.product-suggestions__title:first-child {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.product-suggestions__products {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0rem;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.product-suggestions__products::-webkit-scrollbar {
+    display: none;
+}
+
+.product-suggestions__product {
+    margin: 0 3rem;
+}
+
+.product-suggestions__product-image {
+    width: 20rem;
+}
+
+.product-suggestions__product-name {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.product-suggestions__product-sub-title {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: -0.4rem;
+}
+
+.product-suggestions__product-price {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.3rem 0;
+}
+
+@media only screen and (max-width: 750px) {
+    .product-details {
+        flex-direction: column;
+    }
+    
+    .product-details__title {
+        margin-top: 2.5rem;
+    }
+
+    .product-details__selling-points-item {
+        width: 14rem;
+    }
+
+    .product-suggestions__product-image {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .product-details__selling-points-item {
+        width: 11rem;
+    }
+
+    .product-suggestions__product-image {
+        width: 16rem;
+    }
+    
+    .product-details_info {
+        min-width: auto;
+        padding: 2rem 1.1rem;
+    }
+
+    .product-suggestions__product {
+        margin: 0 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .product-details__menu a {
+        font-size: 0.7rem;
+    }
+}

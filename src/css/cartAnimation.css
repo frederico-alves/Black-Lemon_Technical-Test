@@ -1,0 +1,63 @@
+/*------------------------------------------------
+-- FREDERICO ALVES --
+--------------------------------------------------
+-- BLACK LEMON --
+--------------------------------------------------*/
+
+.cart-button span {
+    width: 100%;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+  
+@keyframes slide-up-fade {
+from {
+    transform: translateY(0);
+    opacity: 1;
+}
+to {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+}
+  
+.checked-out span {
+  animation: slide-up-fade 80ms 1;
+  animation-fill-mode: both;
+}
+  
+.checked-out #cart {
+  animation: roll-out 1s 1 80ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes checkmark {
+  from {
+    stroke-dashoffset: 26px;
+  }
+  to {
+    stroke-dashoffset: 0;  
+  }
+}
+
+#check {
+  position: absolute;
+  left: calc(50% - 12px);
+}
+
+#check path {
+  stroke-dasharray: 26px;
+  stroke-dashoffset: 26px;
+}
+
+.checked-out #check path {
+  animation: checkmark 80ms 1 80ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
