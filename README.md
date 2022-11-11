@@ -8,7 +8,8 @@
 
 This technical test was requested by Black Lemon
 
-<img width="1376" alt="1" src="https://user-images.githubusercontent.com/31135848/201292078-56f507c6-3f10-4e6f-b330-8ce90116b7bd.png">
+<img width="1244" alt="Screenshot 2022-11-11 at 09 46 47" src="https://user-images.githubusercontent.com/31135848/201302160-317c8904-225a-47ec-9081-02e4a4760513.png">
+
 
 ## Goals Achieved
 
