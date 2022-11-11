@@ -12,11 +12,11 @@ This technical test was requested by Black Lemon
 
 ## Goals Achieved
 
-✅ When clicking add to cart make a small animation that shows the product was added to the cart;
-✅ Use Parcel to bundle the css and javascrip;
-✅ 5h spent on the test;
-✅ Structure the code as if this was just the start of a project that would contain a lot more pages;
-✅ The code should live in a git repository;
+✅ When clicking add to cart make a small animation that shows the product was added to the cart;<br>
+✅ Use Parcel to bundle the css and javascrip;<br>
+✅ 5h spent on the test;<br>
+✅ Structure the code as if this was just the start of a project that would contain a lot more pages;<br>
+✅ The code should live in a git repository;<br>
 
 ## Installation
 
